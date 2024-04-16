@@ -9,6 +9,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -32,14 +33,14 @@ body::before {
 @media (max-width: 767px) {
   /* For devices smaller than 768px (typical mobile devices) */
   body::before {
-    background-position: 78% 0; /* Adjust the position as desired */
+    background-position: 72% 0; /* Adjust the position as desired */
   }
 }
 
 @media (min-width: 768px) {
   /* For devices 768px and larger (typically tablets and desktops) */
   body::before {
-    background-position: 85% 0; /* Keep the position at top right */
+    background-position: 65% 0; /* Keep the position at top right */
   }
 }
 
