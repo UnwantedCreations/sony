@@ -42,12 +42,12 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: #fe8720;
   text-decoration: none;
 }
 
 a:hover {
-  color: #35e888;
+  color: #f0dc6d;
   text-decoration: none;
 }
 
@@ -101,7 +101,7 @@ h6 {
 
 #header h2 span {
   color: #fff;
-  border-bottom: 2px solid #18d26e;
+  border-bottom: 2px solid #fe8720;
   padding-bottom: 6px;
 }
 
@@ -130,7 +130,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #18d26e;
+  background: #fe8720;
 }
 
 @media (max-width: 992px) {
@@ -274,7 +274,7 @@ h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #fe8720;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -370,19 +370,13 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  position: absolute;
   width: 100%;
-  top: 140px;
-  bottom: 100%;
-  opacity: 0;
+  min-height: 100vh;
   transition: ease-in-out 0.4s;
   z-index: 2;
 }
 
 section.section-show {
-  top: 100px;
-  bottom: auto;
-  opacity: 1;
   padding-bottom: 45px;
 }
 
@@ -438,7 +432,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: #fe8720;
 }
 
 .about-me .content ul {
@@ -459,7 +453,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #18d26e;
+  color: #fe8720;
   line-height: 0;
 }
 
@@ -490,7 +484,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #18d26e;
+  color: #fe8720;
   border-radius: 50px;
   line-height: 0;
 }
@@ -542,7 +536,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #18d26e;
+  background-color: #fe8720;
 }
 
 /*--------------------------------------------------------------
@@ -587,7 +581,10 @@ section .container {
   box-sizing: content-box;
   min-height: 320px;
 }
-
+section.section-show {
+  opacity: 1;
+  padding-bottom: 45px;
+}
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
@@ -653,7 +650,7 @@ section .container {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #fe8720;
 }
 
 /*--------------------------------------------------------------
@@ -680,7 +677,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #18d26e;
+  color: #fe8720;
   margin-bottom: 10px;
 }
 
@@ -713,8 +710,8 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: #fe8720;
+  border: 2px solid #fe8720;
 }
 
 /*--------------------------------------------------------------
@@ -731,7 +728,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #18d26e;
+  background: #fe8720;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -776,8 +773,8 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: #ff6702;
+  border-color: #fe8720;
 }
 
 .services .icon-box:hover .icon {
@@ -785,11 +782,11 @@ section .container {
 }
 
 .services .icon-box:hover .icon i {
-  color: #18d26e;
+  color: #fe8720;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #f0dc6d;
 }
 
 .services .icon-box:hover h4 a,
@@ -830,7 +827,7 @@ section .container {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: #fe8720;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1024,7 +1021,7 @@ section .container {
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #fe8720;
 }
 
 /*--------------------------------------------------------------
@@ -1039,7 +1036,7 @@ section .container {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #18d26e;
+  color: #fe8720;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -1076,7 +1073,7 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #18d26e;
+  color: #fe8720;
 }
 
 .contact .php-email-form {
@@ -1100,7 +1097,7 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
+  background: #fe8720;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1120,7 +1117,7 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #fe8720;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1162,7 +1159,7 @@ section .container {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #18d26e;
+  background: #fe8720;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1208,7 +1205,7 @@ section .container {
 }
 
 .credits a {
-  color: #18d26e;
+  color: #fe8720;
   transition: 0.3s;
 }
 
