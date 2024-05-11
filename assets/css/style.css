@@ -1,5 +1,3 @@
-
-
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -42,7 +40,7 @@ body::before {
 }
 
 a {
-  color: #fe8720;
+  color: #1178ff;
   text-decoration: none;
 }
 
@@ -101,7 +99,7 @@ h6 {
 
 #header h2 span {
   color: #fff;
-  border-bottom: 2px solid #fe8720;
+  border-bottom: 2px solid #1178ff;
   padding-bottom: 6px;
 }
 
@@ -130,7 +128,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #fe8720;
+  background: #1178ff;
 }
 
 @media (max-width: 992px) {
@@ -274,7 +272,7 @@ h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #fe8720;
+  background-color: #1178ff;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -370,13 +368,19 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
+  position: absolute;
   width: 100%;
-  min-height: 100vh;
+  top: 140px;
+  bottom: 100%;
+  opacity: 0;
   transition: ease-in-out 0.4s;
   z-index: 2;
 }
 
 section.section-show {
+  top: 100px;
+  bottom: auto;
+  opacity: 1;
   padding-bottom: 45px;
 }
 
@@ -432,7 +436,7 @@ section .container {
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #fe8720;
+  color: #1178ff;
 }
 
 .about-me .content ul {
@@ -453,7 +457,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #fe8720;
+  color: #1178ff;
   line-height: 0;
 }
 
@@ -484,7 +488,7 @@ section .container {
   font-size: 24px;
   background: rgba(255, 255, 255, 0.1);
   padding: 12px;
-  color: #fe8720;
+  color: #1178ff;
   border-radius: 50px;
   line-height: 0;
 }
@@ -536,7 +540,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #fe8720;
+  background-color: #1178ff;
 }
 
 /*--------------------------------------------------------------
@@ -650,7 +654,7 @@ section.section-show {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fe8720;
+  background-color: #1178ff;
 }
 
 /*--------------------------------------------------------------
@@ -677,7 +681,7 @@ section.section-show {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #fe8720;
+  color: #1178ff;
   margin-bottom: 10px;
 }
 
@@ -710,8 +714,8 @@ section.section-show {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fe8720;
-  border: 2px solid #fe8720;
+  background: #1178ff;
+  border: 2px solid #1178ff;
 }
 
 /*--------------------------------------------------------------
@@ -728,7 +732,7 @@ section.section-show {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #fe8720;
+  background: #1178ff;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -774,7 +778,7 @@ section.section-show {
 
 .services .icon-box:hover {
   background: #ff6702;
-  border-color: #fe8720;
+  border-color: #1178ff;
 }
 
 .services .icon-box:hover .icon {
@@ -782,7 +786,7 @@ section.section-show {
 }
 
 .services .icon-box:hover .icon i {
-  color: #fe8720;
+  color: #1178ff;
 }
 
 .services .icon-box:hover .icon::before {
@@ -827,7 +831,7 @@ section.section-show {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #fe8720;
+  background: #1178ff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1021,7 +1025,7 @@ section.section-show {
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fe8720;
+  background-color: #1178ff;
 }
 
 /*--------------------------------------------------------------
@@ -1036,7 +1040,7 @@ section.section-show {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #fe8720;
+  color: #1178ff;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -1073,7 +1077,7 @@ section.section-show {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #fe8720;
+  color: #1178ff;
 }
 
 .contact .php-email-form {
@@ -1097,7 +1101,7 @@ section.section-show {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #fe8720;
+  background: #1178ff;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1117,7 +1121,7 @@ section.section-show {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #fe8720;
+  border: 3px solid #1178ff;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1159,7 +1163,7 @@ section.section-show {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #fe8720;
+  background: #1178ff;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1205,7 +1209,7 @@ section.section-show {
 }
 
 .credits a {
-  color: #fe8720;
+  color: #1178ff;
   transition: 0.3s;
 }
 
