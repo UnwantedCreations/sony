@@ -723,14 +723,9 @@ section.section-show {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: rgba(255, 255, 255, 0);
-  padding: 100px 20px;
+  background: rgba(255, 0, 0, 0);
+  padding: 80px 20px;
   transition: all ease-in-out 0.3s;
-  backdrop-filter: blur(15px);
-}
-
-.services .icon-box:hover {
-  backdrop-filter: none; /* Remove blur effect on hover */
 }
 
 .services .icon-box .icon {
@@ -781,6 +776,10 @@ section.section-show {
   margin-bottom: 0;
 }
 
+.services .icon-box:hover {
+  border-color: #1178ff;
+}
+
 .services .icon-box:hover .icon {
   background: #fff;
 }
@@ -804,7 +803,8 @@ section.section-show {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0); /* Semi-transparent white background */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  backdrop-filter: blur(5px); /* Blur the background */
   z-index: -1; /* Move it behind the content */
 }
 
@@ -815,6 +815,7 @@ section.section-show {
   -webkit-text-stroke: 1px #ff0000; /* Stroke width and color for WebKit browsers */
   text-stroke: 1px #ff0000; /* Stroke width and color for other browsers */
 }
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
