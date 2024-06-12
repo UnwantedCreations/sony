@@ -808,12 +808,12 @@ section.section-show {
   z-index: -1; /* Move it behind the content */
 }
 
-.services .icon-box:hover h4,
+.services .icon-box:hover h3,
 .services .icon-box:hover a,
 .services .icon-box:hover p {
-  color: #4ceb95; /* Text color */
-  -webkit-text-stroke: 1px #4ceb95; /* Stroke width and color for WebKit browsers */
-  text-stroke: 1px #4ceb95; /* Stroke width and color for other browsers */
+  color: #22fa75; /* Text color */
+  -webkit-text-stroke: 1px #22fa75; /* Stroke width and color for WebKit browsers */
+  text-stroke: 1px #22fa75; /* Stroke width and color for other browsers */
 }
 
 /*--------------------------------------------------------------
