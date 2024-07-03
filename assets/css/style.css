@@ -1269,3 +1269,45 @@ section.section-show {
   max-height: 400px; /* Set the max height for scrolling */
   overflow-y: auto;
 }
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #25d366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+.floating-btn.call {
+  right: 20px;
+  background-color: #007bff;
+}
+
+.floating-btn.whatsapp {
+  left: 20px;
+  background-color: #25d366;
+}
