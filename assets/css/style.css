@@ -133,13 +133,20 @@ h6 {
 }
 
 @media (max-width: 992px) {
+  #header {
+    padding-top: 20px; /* Adjust as needed to bring the heading down */
+    padding-bottom: 0; /* Remove any extra space at the bottom */
+  }
+
   #header h1 {
     font-size: 36px;
+    margin-bottom: 0; /* Ensure no extra spacing under the h1 */
   }
 
   #header h2 {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 0px; /* Adjust as needed */
   }
 
   #header .social-links {
@@ -152,6 +159,7 @@ h6 {
     align-items: center;
   }
 }
+
 
 /* Header Top */
 #header.header-top {
@@ -193,7 +201,7 @@ h6 {
   }
 
   #header.header-top h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 
@@ -218,12 +226,19 @@ h6 {
     font-size: 2.5rem;
   }
 }
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
+/* Desktop Navigation */
+
+@media (min-width: 992px) {
+  /* Hide icons in desktop mode */
+  .navbar a i {
+    display: none;
+  }
+
+  /* Show text only in desktop mode */
+  .navbar a span {
+    display: inline;
+  }
+}
 .navbar {
   padding: 0;
   margin-top: 35px;
@@ -275,7 +290,6 @@ h6 {
   left: 0;
   background-color: #1178ff;
   visibility: hidden;
-  width: 0px;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -292,76 +306,55 @@ h6 {
 .navbar li:hover>a {
   color: #fff;
 }
-
-/**
-* Mobile Navigation 
-*/
-.mobile-nav-toggle {
-  color: #fff;
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
-  line-height: 0;
-  transition: 0.5s;
-  position: fixed;
-  right: 15px;
-  top: 15px;
+ /* Show text only in desktop mode */
+ .navbar a span {
+  display: inline;
 }
 
+/* Mobile Navigation */
 @media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 999;
   }
 
   .navbar ul {
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
   }
-}
 
-.navbar-mobile {
-  position: fixed;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
-  transition: 0.3s;
-  z-index: 999;
-  margin-top: 0;
-}
+  .navbar li+li {
+    margin-left: 0; /* Remove spacing between items */
+  }
 
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
+  .navbar a {
+    font-size: 24px; /* Larger for icons */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
 
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 45px;
-  left: 15px;
-  padding: 10px 0;
-  overflow-y: auto;
-  transition: 0.3s;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-}
+  .navbar a span {
+    display: none; /* Hide text in mobile */
+  }
 
-.navbar-mobile li {
-  padding: 12px 20px;
-}
+  .navbar i {
+    font-size: 20px; /* Icon size */
+  }
 
-.navbar-mobile li+li {
-  margin: 0;
-}
-
-.navbar-mobile a,
-.navbar-mobile a:focus {
-  font-size: 16px;
-  position: relative;
+  .mobile-nav-toggle {
+    display: none; /* Hide toggle button in mobile */
+  }
 }
 
 /*--------------------------------------------------------------
@@ -438,6 +431,33 @@ section .container {
   font-weight: 700;
   font-size: 26px;
   color: #1178ff;
+}
+@media (max-width: 992px) {
+  #header {
+    padding-top: 20px; /* Adjust as needed to bring the heading down */
+    padding-bottom: 0; /* Remove any extra space at the bottom */
+  }
+
+  #header h1 {
+    font-size: 36px;
+    margin-bottom: 0; /* Ensure no extra spacing under the h1 */
+  }
+
+  #header h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0px; /* Adjust as needed */
+  }
+
+  #header .social-links {
+    margin-top: 15px;
+  }
+
+  #header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .about-me .content ul {
@@ -1284,7 +1304,7 @@ section.section-show {
 
 .floating-btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 60px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
